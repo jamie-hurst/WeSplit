@@ -5,9 +5,6 @@
 //  Created by Jameson Hurst on 10/16/21.
 //
 
-//Go back to project 1 and use a conditional modifier to change the total amount text view to red if the user selects a 0% tip.
-
-
 import SwiftUI
 
 struct ContentView: View {
