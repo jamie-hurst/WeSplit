@@ -5,6 +5,9 @@
 //  Created by Jameson Hurst on 10/16/21.
 //
 
+//Go back to project 1 and use a conditional modifier to change the total amount text view to red if the user selects a 0% tip.
+
+
 import SwiftUI
 
 struct ContentView: View {
@@ -35,10 +38,10 @@ struct ContentView: View {
                         .keyboardType(.decimalPad)
                         .focused($amountIsFocused)
                     Picker("Number of people", selection: $numberOfPeople) {
-                            ForEach(2 ..< 100) {
-                                Text("\($0) people")
-                            }
+                        ForEach(2 ..< 100) {
+                            Text("\($0) people")
                         }
+                    }
                 }
                 
                 Section {
@@ -52,13 +55,14 @@ struct ContentView: View {
                 }
                 
                 Section {
-                        Text(grandTotal, format: localCurrency)
+                    Text(grandTotal, format: localCurrency)
+                        .foregroundColor(tipPercentage > 0 ? .primary : .red)
                 } header: {
                     Text("Total amount")
                 }
                 
                 Section {
-                        Text(totalPerPerson, format: localCurrency)
+                    Text(totalPerPerson, format: localCurrency)
                 } header: {
                     Text("Amount per person")
                 }
