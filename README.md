@@ -3,6 +3,7 @@
 
 #### This app allows the user to calculate the tip and split a check.
 
-![app-demo](https://user-images.githubusercontent.com/28959624/137837351-d163f48b-af52-4bfa-b2e9-f88983c052d7.gif)
+https://user-images.githubusercontent.com/28959624/139195288-d9576786-7fe0-4ca8-a0eb-fa1764fe469f.mov
+
 
 
